@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from 'src/app/model/user.models';
+import { UserModel } from 'src/app/model/user.models';
 import { CommonServiceService } from 'src/app/services/common-service.service';
 declare var $: any;
 @Component({
@@ -31,7 +31,7 @@ export class ChatRoomComponent implements OnInit {
       }
     });
   }
-user= new User;
+user= new UserModel;
 getUserByUserUniqueId(userUniqueId:number){
     this.commonService.getUserByUserUniqueId(userUniqueId).subscribe((res: any) => {
       if (res.status) {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from 'src/app/model/user.models';
+import { UserModel } from 'src/app/model/user.models';
 import { CommonServiceService } from 'src/app/services/common-service.service';
 
 @Component({
@@ -15,14 +15,14 @@ export class SignUpComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  user = new User();
+  userModel = new UserModel();
   saveUser() {
-    this.commonService.saveUser(this.user).subscribe((res: any) => {
+    this.commonService.saveUser(this.userModel).subscribe((res: any) => {
       if (res.status) {
-        this.user = new User();
+        this.userModel = new UserModel();
       }
     });
-    console.log(JSON.stringify(this.user));
+    console.log(JSON.stringify(this.userModel));
     this.getAllUsers();
   }
   getAllUsers() {

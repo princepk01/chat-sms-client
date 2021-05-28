@@ -1,9 +1,10 @@
-.sign-up-outer-box{
+.schedule-meeting-outer-box{
     width: 100%;
-    height: 100vh;
+    height: 111vh;
     background: url('/assets/images/bcakground-1.png') no-repeat 50% 50%;
     background-size: cover;
 }
+
 .form-group{
     color: #ed8222;
     font-size: 20px;
@@ -99,3 +100,9 @@ color: white;
 .links a{
 margin-left: 4px;
 }
+.calendar{
+    margin-top: -39px;
+    margin-left: 482px;
+    width: 10px;
+}
+

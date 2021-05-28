@@ -13,6 +13,8 @@ import { SignUpComponent } from './component/sign-up/sign-up.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
+import { ScheduleMeetingComponent } from './component/schedule-meeting/schedule-meeting.component';
+import { TestComponent } from './component/test/test.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,9 @@ import { ForgotPasswordComponent } from './component/forgot-password/forgot-pass
     ContactComponent,
     LoginComponent,
     SignUpComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    ScheduleMeetingComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
